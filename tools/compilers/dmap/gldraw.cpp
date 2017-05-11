@@ -26,8 +26,8 @@ static bool versioned = RegisterVersionedFile("$Id: gldraw.cpp 5171 2012-01-07 0
 
 #ifdef WIN32
 #include <windows.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
+//#include <GL/gl.h>
+//#include <GL/glu.h>
 //#include <GL/glaux.h>
 
 #define	WIN_SIZE	1024

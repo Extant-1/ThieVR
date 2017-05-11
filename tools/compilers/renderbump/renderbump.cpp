@@ -24,8 +24,9 @@ static bool versioned = RegisterVersionedFile("$Id: renderbump.cpp 5314 2012-03-
 
 #ifdef WIN32
 #include <windows.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include <../renderer/GL/glew.h>
+//#include <GL/gl.h>
+//#include <GL/glu.h>
 #include "../../../sys/win32/win_local.h"
 #endif
 

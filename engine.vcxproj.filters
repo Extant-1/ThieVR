@@ -97,6 +97,9 @@
     <Filter Include="Ui">
       <UniqueIdentifier>{b3166d25-0562-49da-bc8d-961006fe1785}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Renderer\GL">
+      <UniqueIdentifier>{be42f568-a168-4613-b50a-cf8bd06d9639}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cm\CollisionModel.h">
@@ -196,9 +199,6 @@
       <Filter>Framework\Async</Filter>
     </ClInclude>
     <ClInclude Include="renderer\Cinematic.h">
-      <Filter>Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="renderer\glext.h">
       <Filter>Renderer</Filter>
     </ClInclude>
     <ClInclude Include="renderer\GuiModel.h">
@@ -563,6 +563,15 @@
       <Filter>Sys</Filter>
     </ClInclude>
     <ClInclude Include="sys\win32\rc\PDAEditor_resource.h" />
+    <ClInclude Include="renderer\GL\glew.h">
+      <Filter>Renderer\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\GL\glxew.h">
+      <Filter>Renderer\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\GL\wglew.h">
+      <Filter>Renderer\GL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cm\CollisionModel_contacts.cpp">

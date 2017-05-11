@@ -370,7 +370,9 @@
     <ClInclude Include="framework\async\NetworkSystem.h" />
     <ClInclude Include="framework\async\ServerScan.h" />
     <ClInclude Include="renderer\Cinematic.h" />
-    <ClInclude Include="renderer\glext.h" />
+    <ClInclude Include="renderer\GL\glew.h" />
+    <ClInclude Include="renderer\GL\glxew.h" />
+    <ClInclude Include="renderer\GL\wglew.h" />
     <ClInclude Include="renderer\GuiModel.h" />
     <ClInclude Include="renderer\Image.h" />
     <ClInclude Include="renderer\Interaction.h" />

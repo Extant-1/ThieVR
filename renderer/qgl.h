@@ -24,28 +24,12 @@
 #define __QGL_H__
 
 #if defined( _WIN32 )
-
-#include <gl/gl.h>
-
-#elif defined( MACOS_X )
-
-// magic flag to keep tiger gl.h from loading glext.h
-#define GL_GLEXT_LEGACY
-#include <OpenGL/gl.h>
-
+#include "GL/glew.h"
+#include "GL/wglew.h"
+#define wglSwapBuffers ::SwapBuffers
 #elif defined( __linux__ )
-
-// using our local glext.h
-// http://oss.sgi.com/projects/ogl-sample/ABI/
-#define GL_GLEXT_LEGACY
-#define GLX_GLXEXT_LEGACY
-#include <GL/gl.h>
-#include <GL/glx.h>
-
-#else
-
-#include <gl.h>
-
+#include "GL/glew.h"
+#include "GL/glxew.h"
 #endif
 
 #ifndef APIENTRY
@@ -54,8 +38,6 @@
 #ifndef WINAPI
 #define WINAPI
 #endif
-
-#include "glext.h"
 
 typedef void (*GLExtension_t)(void);
 
