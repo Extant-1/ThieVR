@@ -100,6 +100,9 @@
     <Filter Include="Renderer\GL">
       <UniqueIdentifier>{be42f568-a168-4613-b50a-cf8bd06d9639}</UniqueIdentifier>
     </Filter>
+    <Filter Include="VR">
+      <UniqueIdentifier>{8349ab71-4855-4785-af08-89afe6ba2c8f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cm\CollisionModel.h">
@@ -571,6 +574,12 @@
     </ClInclude>
     <ClInclude Include="renderer\GL\wglew.h">
       <Filter>Renderer\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="vr\Vr.h">
+      <Filter>VR</Filter>
+    </ClInclude>
+    <ClInclude Include="vr\Vr_Hmd.h">
+      <Filter>VR</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1600,6 +1609,9 @@
     <ClCompile Include="framework\precompiled_engine.cpp" />
     <ClCompile Include="framework\I18N.cpp">
       <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="vr\Vr.cpp">
+      <Filter>VR</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

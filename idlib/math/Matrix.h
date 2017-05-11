@@ -844,6 +844,8 @@ public:
 	float *			ToFloatPtr( void );
 	const char *	ToString( int precision = 2 ) const;
 
+	idMat3			ToMat3(void) const; // Extant: added ToMat3()
+
 private:
 	idVec4			mat[ 4 ];
 };
@@ -1162,6 +1164,14 @@ ID_INLINE idMat4 idMat3::ToMat4( void ) const {
 					mat[0][1],	mat[1][1],	mat[2][1],	0.0f,
 					mat[0][2],	mat[1][2],	mat[2][2],	0.0f,
 					0.0f,		0.0f,		0.0f,		1.0f );
+}
+
+ID_INLINE idMat3 idMat4::ToMat3() const {
+	// NOTE: idMat3 is transposed because it is column-major
+	return idMat3(mat[0][0], mat[1][0], mat[2][0],
+		mat[0][1], mat[1][1], mat[2][1],
+		mat[0][2], mat[1][2], mat[2][2]);
+
 }
 
 ID_INLINE int idMat4::GetDimension( void ) const {
