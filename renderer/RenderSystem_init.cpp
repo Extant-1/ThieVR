@@ -2393,3 +2393,24 @@ void idRenderSystemLocal::GetCardCaps( bool &oldCard, bool &nv10or20 ) {
 	oldCard = ( tr.backEndRenderer == BE_ARB || tr.backEndRenderer == BE_R200 || tr.backEndRenderer == BE_NV10 || tr.backEndRenderer == BE_NV20 );
 }
 
+/*
+========================
+Extant
+idRenderSystemLocal::GetNativeWidth
+========================
+*/
+int idRenderSystemLocal::GetNativeWidth()
+{
+	return glConfig.nativeScreenWidth;
+}
+
+/*
+========================
+Extant
+idRenderSystemLocal::GetNativeHeight
+========================
+*/
+int idRenderSystemLocal::GetNativeHeight()
+{
+	return glConfig.nativeScreenHeight;
+}

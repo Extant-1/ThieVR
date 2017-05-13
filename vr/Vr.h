@@ -35,6 +35,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "LibOVR\Include\OVR_CAPI.h"
 #include "LibOVR\Include\OVR_CAPI_GL.h"
+#include "LibOVR\Include\Extras\OVR_Math.h"
 #include "vr_hmd.h"
 //#include "Voice.h"
 //#include "FlickSync.h"

@@ -97,9 +97,6 @@
     <Filter Include="Ui">
       <UniqueIdentifier>{b3166d25-0562-49da-bc8d-961006fe1785}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Renderer\GL">
-      <UniqueIdentifier>{be42f568-a168-4613-b50a-cf8bd06d9639}</UniqueIdentifier>
-    </Filter>
     <Filter Include="VR">
       <UniqueIdentifier>{8349ab71-4855-4785-af08-89afe6ba2c8f}</UniqueIdentifier>
     </Filter>
@@ -566,15 +563,6 @@
       <Filter>Sys</Filter>
     </ClInclude>
     <ClInclude Include="sys\win32\rc\PDAEditor_resource.h" />
-    <ClInclude Include="renderer\GL\glew.h">
-      <Filter>Renderer\GL</Filter>
-    </ClInclude>
-    <ClInclude Include="renderer\GL\glxew.h">
-      <Filter>Renderer\GL</Filter>
-    </ClInclude>
-    <ClInclude Include="renderer\GL\wglew.h">
-      <Filter>Renderer\GL</Filter>
-    </ClInclude>
     <ClInclude Include="vr\Vr.h">
       <Filter>VR</Filter>
     </ClInclude>
@@ -1611,6 +1599,9 @@
       <Filter>Framework</Filter>
     </ClCompile>
     <ClCompile Include="vr\Vr.cpp">
+      <Filter>VR</Filter>
+    </ClCompile>
+    <ClCompile Include="vr\Vr_GL.cpp">
       <Filter>VR</Filter>
     </ClCompile>
   </ItemGroup>

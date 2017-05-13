@@ -74,6 +74,14 @@ typedef struct glconfig_s {
 	int					displayFrequency;
 	bool				isFullscreen;
 
+	// Extant: BEGIN new parameters for VR
+	bool				isStereoPixelFormat;
+	bool				stereoPixelFormatAvailable;
+	int					multisamples;
+	int					nativeScreenWidth; // this is the native screen width resolution of the renderer
+	int					nativeScreenHeight; // this is the native screen height resolution of the renderer
+	// Extant: END
+
 	bool				allowNV30Path;
 	bool				allowNV20Path;
 	bool				allowNV10Path;
@@ -254,6 +262,11 @@ public:
 	// texture filter / mipmapping / repeat won't be modified by the upload
 	// returns false if the image wasn't found
 	virtual bool			UploadImage( const char *imageName, const byte *data, int width, int height ) = 0;
+
+	// Extant: BEGIN New parms for VR
+	virtual int				GetNativeWidth() = 0;
+	virtual int				GetNativeHeight() = 0;
+	// Extant: END
 };
 
 extern idRenderSystem *			renderSystem;

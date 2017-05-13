@@ -774,6 +774,13 @@ bool GLimp_Init( glimpParms_t parms ) {
 		return false;
 	}
 
+	// Extant: BEGIN added parameters for VR
+	glConfig.isStereoPixelFormat = parms.stereo;
+	glConfig.nativeScreenWidth = parms.width;
+	glConfig.nativeScreenHeight = parms.height;
+	glConfig.multisamples = parms.multiSamples;
+	// Extant: END
+
 	// wglSwapinterval, etc
 	GLW_CheckWGLExtensions( win32.hDC );
 

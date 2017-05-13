@@ -479,6 +479,7 @@ typedef enum {
 	RC_NOP,
 	RC_DRAW_VIEW,
 	RC_SET_BUFFER,
+	RC_DRAW_STEREO_VIEW, // Extant: Added for VR support
 	RC_COPY_RENDER,
 	RC_SWAP_BUFFERS		// can't just assume swap at end of list because
 						// of forced list submission before syncs
@@ -744,6 +745,11 @@ public:
 	virtual void			UnCrop();
 	virtual void			GetCardCaps( bool &oldCard, bool &nv10or20 );
 	virtual bool			UploadImage( const char *imageName, const byte *data, int width, int height );
+
+	// Extant: BEGIN New parms for VR
+	virtual int				GetNativeWidth();
+	virtual int				GetNativeHeight();
+	// Extant: END
 
 public:
 	// internal functions

@@ -21,7 +21,7 @@
 #define __WIN_LOCAL_H__
 
 #include <windows.h>
-#include <../renderer/GL/glew.h>
+//#include <../renderer/GL/glew.h>
 //#include "wglext.h"		// windows specific OpenGL extensions
 
 // WGL_ARB_extensions_string

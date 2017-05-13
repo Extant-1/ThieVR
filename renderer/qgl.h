@@ -23,13 +23,12 @@
 #ifndef __QGL_H__
 #define __QGL_H__
 
+#include "../lib/glew/include/GL/glew.h"
 #if defined( _WIN32 )
-#include "GL/glew.h"
-#include "GL/wglew.h"
+#include "../lib/glew/include/GL/wglew.h"
 #define wglSwapBuffers ::SwapBuffers
 #elif defined( __linux__ )
-#include "GL/glew.h"
-#include "GL/glxew.h"
+#include "../lib/glew/include/GL/glxew.h"
 #endif
 
 #ifndef APIENTRY

@@ -252,9 +252,9 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Link>
-      <AdditionalLibraryDirectories>openal\lib;sys\win32\dongle;vr\openvr\lib\win32;vr\libOVR\lib\Windows\Win32\Release\VS2013;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>openal\lib;sys\win32\dongle;vr\openvr\lib\win32;vr\libOVR\lib\Windows\Win32\Release\VS2013;lib\glew\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <AdditionalDependencies>libovr.lib;openvr_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glew32.lib;libovr.lib;openvr_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -371,9 +371,6 @@
     <ClInclude Include="framework\async\NetworkSystem.h" />
     <ClInclude Include="framework\async\ServerScan.h" />
     <ClInclude Include="renderer\Cinematic.h" />
-    <ClInclude Include="renderer\GL\glew.h" />
-    <ClInclude Include="renderer\GL\glxew.h" />
-    <ClInclude Include="renderer\GL\wglew.h" />
     <ClInclude Include="renderer\GuiModel.h" />
     <ClInclude Include="renderer\Image.h" />
     <ClInclude Include="renderer\Interaction.h" />
@@ -2585,6 +2582,7 @@
     <ClCompile Include="ui\Window.cpp" />
     <ClCompile Include="ui\Winvar.cpp" />
     <ClCompile Include="vr\Vr.cpp" />
+    <ClCompile Include="vr\Vr_GL.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="openal\idal.py" />
